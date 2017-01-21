@@ -17,7 +17,39 @@
     </header>
     <section class="mdl-grid">
       <section class="mdl-cell mdl-cell--5-col">
-        <p> Forms </p>
+        <form class="ActionForm mdl-grid" action="">
+          <header class="mdl-cell mdl-cell--12-col">
+            <h2 class="ActionForm-title">Busque Serviços</h2>
+            <p class="ActionForm-subTitle">Um texto pro encher linguiça explicando a seção de busca</p>
+          </header>
+          <section class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="search-service-name">
+              <label class="mdl-textfield__label" for="search-service-name">Nome do Serviço</label>
+            </div>
+
+            <div class="mdl-grid u-noPadding">
+              <div class="mdl-cell mdl-cell--8-col">
+                <div class="RecomendationBox">
+                  <select class="RecomendationType" name="search-service-recommendation">
+                    <option value="none" disabled="disabled" selected="selected">Recomendações</option>
+                    <option value="contacts">Recomendado por Contatos</option>
+                    <option value="any">Qualquer Recomendação</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
+                  Button
+                </button>
+              </div>
+            </div>
+          </section>
+        </form>
+
+        <form class="mdl-cell mdl-cell--12-col" action="">
+        </form>
       </section>
       <section class="mdl-cell mdl-cell--7-col">
         <p> Conteúdo </p>
