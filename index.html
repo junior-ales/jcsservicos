@@ -13,11 +13,13 @@
   <body>
     <header class="MainHeader mdl-grid">
       <h1 class="MainHeader-title mdl-cell mdl-cell--3-col">Serviços</h1>
-      <p class="MainHeader-subTitle mdl-cell mdl-cell--9-col">um subtitulo legal pra chamar a atenção do usuário</p>
+      <p class="MainHeader-subTitle mdl-cell mdl-cell--9-col mdl-cell--hide-tablet mdl-cell--hide-phone">
+        um subtitulo legal pra chamar a atenção do usuário
+      </p>
     </header>
     <section class="mdl-grid">
-      <section class="mdl-cell mdl-cell--5-col">
-        <form class="ActionForm mdl-grid" action="">
+      <section class="mdl-grid mdl-cell mdl-cell--5-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <form class="ActionForm mdl-cell mdl-cell--12-col-desktop mdl-cell--4-col-tablet" action="#submitSearchService">
           <header class="mdl-cell mdl-cell--12-col">
             <h2 class="ActionForm-title">Busque Serviços</h2>
             <p class="ActionForm-subTitle">Um texto pro encher linguiça explicando a seção de busca</p>
@@ -39,19 +41,46 @@
                 </div>
               </div>
 
-              <div class="mdl-cell mdl-cell--4-col">
-                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary">
-                  Button
+              <div class="ButtonBox mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--middle">
+                <button class="Button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                  Buscar
                 </button>
               </div>
             </div>
           </section>
         </form>
 
-        <form class="mdl-cell mdl-cell--12-col" action="">
+        <form class="ActionForm mdl-cell mdl-cell--12-col-desktop mdl-cell--4-col-tablet" action="#submitCreateService">
+          <header class="mdl-cell mdl-cell--12-col">
+            <h2 class="ActionForm-title">Recomende Serviços</h2>
+            <p class="ActionForm-subTitle">Um texto pro encher linguiça explicando a seção de recomendações</p>
+          </header>
+          <section class="mdl-cell mdl-cell--12-col">
+            <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="recommendation-service-name">
+              <label class="mdl-textfield__label" for="recommendation-service-name">Nome do Serviço</label>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="recommendation-service-person-name">
+              <label class="mdl-textfield__label" for="recommendation-service-person-name">Pessoa Prestadora do Serviço</label>
+            </div>
+
+            <div class="mdl-grid u-noPadding">
+              <div class="mdl-cell mdl-cell--8-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="recommendation-person-phone">
+                <label class="mdl-textfield__label" for="recommendation-person-phone">Telefone</label>
+              </div>
+
+              <div class="ButtonBox mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--middle">
+                <button class="Button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                  Salvar
+                </button>
+              </div>
+            </div>
+          </section>
         </form>
       </section>
-      <section class="mdl-cell mdl-cell--7-col">
+      <section class="mdl-grid mdl-cell mdl-cell--7-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
         <p> Conteúdo </p>
       </section>
     </section>
