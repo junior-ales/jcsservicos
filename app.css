@@ -65,14 +65,15 @@ body {
   border-top: 0.5em solid #777777;
   border-left: 0.5em solid transparent;
   border-right: 0.5em solid transparent;
-  opacity: 0.75;
+  opacity: 0.5;
 
   -moz-pointer-events: none;
   -webkit-pointer-events: none;
   pointer-events: none;
 }
 
-.RecomendationBox > .RecomendationType {
+.RecomendationBox > .RecomendationType,
+.RecomendationBox > .RecomendationType--active {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -82,10 +83,17 @@ body {
   cursor: pointer;
   width: 100%;
   font-size: 1em;
-  color: rgba(0, 0, 26, .25);
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 26, .25);
   border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 26, .15);
+}
+
+.RecomendationBox > .RecomendationType {
+  color: rgba(0, 0, 26, .25);
+}
+
+.RecomendationBox > .RecomendationType--active {
+  color: rgba(0, 0, 26, 1);
 }
 
 .ButtonBox {
@@ -107,5 +115,11 @@ body {
 @media screen and (max-width: 1260px) {
   .MainHeader-subTitle {
     display: none;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .RecomendationBox {
+    padding-right: 0;
   }
 }
