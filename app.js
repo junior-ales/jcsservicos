@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   var PAGE = {
-    $recommendationTypes: document.querySelector('[data-recommendation-types]'),
+    $recommendationTypes: document.querySelector('[data-recommendation-types]')
   };
 
   var toggleRecommendationTypeClass = function() {
-    var selectedType = this.options[this.selectedIndex].value
+    var selectedType = this.options[this.selectedIndex].value;
     this.className = selectedType === 'none' ? 'RecomendationType' : 'RecomendationType--active';
   };
 
